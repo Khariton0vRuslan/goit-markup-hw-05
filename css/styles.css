@@ -108,12 +108,27 @@ img{
     display: flex;
     gap: 40px;
 }
+.header-menu-item{
+
+}
+
+.header-menu-link-first::after{
+    content: "";
+    width: 100%;
+    position:absolute;
+    left: 0;
+    bottom: -1px;  
+    height: 4px;
+    background-color:#404BBF; 
+    border-radius: 2px;
+  
+}
 
 .header-menu-link.current{
     color: #404bbf;}
 
 .header-menu-link.current::after{
-    content: "";
+    counter-reset: "";
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -669,35 +684,25 @@ height: 40px;
 }
 
 .modal-title{
-    font-weight: 500; 
     text-align: center;
     max-width: 360px;
     margin-bottom: 40px;
 }
 
-.modal-form{
-    gap: 24px;
-}
-
 .modal-input{
-    width: 264px;
-    height: 40px;
-    border: 1px solid #ffffff;
-    padding-left: 38px;
-    color: #ffffff;
-    outline: transparent;
-    background-color: transparent;
-    transition-duration: 300ms;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    padding-left: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    width: 100%;
+    height: 58px;
+    border:1px solid rgba(46, 47, 66, 0.4);
+    padding-left: 38px;
+    color: green;
+    outline: transparent;
+    transition-duration: 300ms;
 }
 
 .modal-input::placeholder{
-    color: #ffffff; 
+    font-size: 18px;
+    color:  rgba(128, 73, 0 );
 }
 
 .modal-input:focus{
@@ -708,13 +713,19 @@ height: 40px;
     fill: #4d5ae5;
 }
 
+.modal-field{
+    margin-bottom: 8px;
+}
 
 .modal-label{
     display: block;
+    font-size: 12px;
     margin-bottom: 8px;
-    position: relative;
 }
 
+.modal-input-wrap{
+    position: relative;
+}
 
 .modal-icon{
     fill: #2E2F42;
@@ -745,9 +756,6 @@ height: 40px;
     align-items: center;
     margin-right: 8px;
 }
-.check-icon{
-    margin-left:16px ;
-}
 
 .link-policy{
     font-size: 12px;
@@ -767,14 +775,4 @@ height: 40px;
     border: none;
     background-color: #404BBF;
     fill: #f4f4fd;
-}
-
-.hero-btn{
-    min-width: 165px; 
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    cursor: pointer;
 }
