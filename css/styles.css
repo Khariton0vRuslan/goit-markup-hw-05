@@ -825,10 +825,11 @@ img{
 .link-policy{
     color: #4d5ae5;
 }
-.form-check:checked+.span-form{
+
+.form-check:checked + .span-form{
+    background-color: #404bbf;
     border: none;
-    background-color: #404BBF;
-    fill: #f4f4fd;
+    fill:#F4F4FD;
 }
 
 .modal-btn{
