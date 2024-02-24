@@ -688,11 +688,13 @@ img{
 }
 .modal-close:hover{
     background-color: #404bbf;
+    fill: #ffffff;
     border: none;
 }
 
 .modal-close:focus{
     background-color: #404bbf;
+    fill: #ffffff;
     border: none;
 }
 
@@ -823,7 +825,7 @@ img{
 .link-policy{
     color: #4d5ae5;
 }
-.form-check:checked .span-form{
+.form-check:checked+.span-form{
     border: none;
     background-color: #404BBF;
     fill: #f4f4fd;
