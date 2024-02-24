@@ -767,6 +767,7 @@ img{
 }
 
 .modal-icon{
+    align-items: center;
     position: absolute;
     fill: #2E2F42;
     left: 16px;
